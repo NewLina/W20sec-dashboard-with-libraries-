@@ -1,4 +1,4 @@
-//const moment = require('moment');
+const moment = require('moment');
 
 JSON =
 {
@@ -8,5 +8,6 @@ JSON =
 
 const containerDate=document.querySelector('.container__date');
 
-// let date = moment();
-// console.log(date);
+let date = moment();
+console.log(date);
+
