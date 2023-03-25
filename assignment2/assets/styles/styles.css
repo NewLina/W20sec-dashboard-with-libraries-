@@ -5,12 +5,7 @@
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
-/* .wrapper{
-    max-width: 100%;
-    display: grid;
-grid-template-columns: 10% 1fr 20%;
-grid-template-rows: 100vh;
-} */
+
 
 .container{
     background-color: rgb(241, 237, 227);
@@ -60,4 +55,18 @@ text-align: center;
 .title-text{
     color: black;
     padding: 2% 50% 0 0;
+}
+.container__title{
+    padding-top: 1vw;
+    margin: 0;
+    font-weight: 700;
+}
+
+.container__date{
+    padding-bottom: 1.5vw;
+}
+
+.statistics__weekly-chart{
+    background-color: white;
+    margin-top: 2vw;
 }

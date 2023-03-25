@@ -1,0 +1,17 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apexcharts": "^3.37.2",
+    "chart.js": "^4.2.1",
+    "moment": "^2.29.4"
+  }
+}
