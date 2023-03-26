@@ -55,6 +55,7 @@ text-align: center;
 .title-text{
     color: black;
     padding: 2% 50% 0 0;
+    font-size: 1.3vw;
 }
 .container__title{
     padding-top: 1vw;
@@ -69,4 +70,32 @@ text-align: center;
 .statistics__weekly-chart{
     background-color: white;
     margin-top: 2vw;
+    width: 75%;
+}
+
+.container__statistics{
+    display: flex;
+    flex-direction: row;
+    color:rgb(221, 146, 34);
+}
+
+.tasks{
+    display: flex;
+    flex-direction: row;
+}
+.tasks__chart{
+    width: 70%;
+}
+.tasks__todo-list{
+    width: 29%;
+}
+
+.statistics__projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects-stat, .tasks-stat{
+    display: flex;
+    flex-direction: column;
 }

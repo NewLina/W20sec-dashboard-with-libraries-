@@ -66,7 +66,7 @@
                 <div class="container__intro card border-warning text-bg-dark">
                     <img src="./assets/images/back.png" class="card-img container__intro-image" alt="...">
                     <div class="card-img-overlay">
-                        <p class="title-text">Welcome Dear Developer!</p>
+                        <p class="title-text"></p>
                         <p class="card-text">You have 2 projects to finish. And already completed 68% from your monthly
                             level. Keep going to your goal!</p>
                         <a href="#" class="card-button btn btn-lg btn-warning">More</a>
@@ -74,13 +74,22 @@
                 </div>
                 <div class="container__statistics">
                     <div class="statistics__weekly-chart">
-                        <canvas id="myChart"></canvas>
+                        <canvas id="myWeeklyChart"></canvas>
                     </div>
-                    <div class="statistics__projects"></div>
+                    <div class="statistics__projects">
+                        <div class="projects-stat">
+                            <div class="total-projects"></div>
+                            <div class="projects-text">Projects</div>
+                        </div>
+                        <div class="tasks-stat">
+                            <div class="total-tasks"></div>
+                            <div class="tasks-text">Tasks</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="container__tasks tasks">
-                    <div class="tasks__chart"></div>
                     <div class="tasks__todo-list"></div>
+                    <div class="tasks__chart"></div>
                 </div>
             </div>
             <div class="col profile">
@@ -98,6 +107,7 @@
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"> </script>"> </script>
     <script type="module" src="bundle.js"></script>
     <script type="module" src="./script/index2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
