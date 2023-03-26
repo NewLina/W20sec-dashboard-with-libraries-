@@ -7,9 +7,12 @@ const myWeeklyChart=document.getElementById('myWeeklyChart');
 const userName=document.querySelector('.title-text');
 const totalProjects = document.querySelector('.total-projects');
 const totalTasks = document.querySelector('.total-tasks');
+const profileName=document.querySelector('.profile__name');
+const position=document.querySelector('.profile__position');
 
 const dataJSON = `{
   "name": "Dear Developer",
+  "position": "Frontend developer",
   "monday": 4,
   "tuesday": 2,
   "wednesday": 6,
@@ -30,12 +33,15 @@ const dataJSON = `{
   "saturdayTasks": 7,
   "newSaturdayTasks": 3,
   "sundayTasks": 4,
-  "newSundayTasks": 4
+  "newSundayTasks": 4,
+  "profile": 70
 }`;
 
 const data=JSON.parse(dataJSON);
 
 userName.textContent=`Welcome ${data.name}!`;
+profileName.textContent=data.name;
+position.textContent=data.position;
 
 new Chart(myWeeklyChart, {
   type: 'line',
@@ -126,4 +132,25 @@ function countTasks() {
   return taskSum;
 }
 
-  
+totalProjects.textContent=`${countProjects()}+`;
+totalTasks.textContent=`${countTasks()}+`;
+
+const barOptions = {
+  series: [data.profile],
+  colors:['rgb(255, 218, 9)'],
+  chart: {
+  height: 290,
+  type: 'radialBar',
+},
+plotOptions: {
+  radialBar: {
+    hollow: {
+      size: '70%',
+    }
+  },
+},
+labels: ['Completed'],
+};
+
+const barChart = new ApexCharts(document.querySelector(".profile__completion-bar"), barOptions);
+barChart.render();

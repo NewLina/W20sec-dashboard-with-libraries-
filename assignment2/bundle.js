@@ -5688,19 +5688,13 @@
 },{}],2:[function(require,module,exports){
 const moment = require('moment');
 const containerDate=document.querySelector('.container__date');
-
-// const data = `[
-//     {
-//             "task": "project"
-//         }
-//     ]`;
-
-
-// const dataJSON = JSON.stringify(data);
-// const dataObject=JSON.parse(dataJSON);
-// console.log(dataObject);
+const containerTime=document.querySelector('.tasks__time');
 
 let today = moment(new Date()).format('dddd, MMMM Do YYYY');
 containerDate.textContent=today;
 
+const update = function() {
+    containerTime.innerHTML = moment().format('LTS');
+};
+setInterval(update, 1000);
 },{"moment":1}]},{},[2]);

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
-    height: 100vh;
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -57,7 +57,7 @@ text-align: center;
     padding: 2% 50% 0 0;
     font-size: 1.3vw;
 }
-.container__title{
+.container__title, .profile__title{
     padding-top: 1vw;
     margin: 0;
     font-weight: 700;
@@ -71,31 +71,97 @@ text-align: center;
     background-color: white;
     margin-top: 2vw;
     width: 75%;
+    border-radius: 1.5vw;
 }
 
 .container__statistics{
     display: flex;
     flex-direction: row;
     color:rgb(221, 146, 34);
+    column-gap: 1.2vw;
 }
 
 .tasks{
     display: flex;
     flex-direction: row;
 }
-.tasks__chart{
-    width: 70%;
+
+.tasks__chart-title{
+    width: 65%;
+    margin-top: 2vw;
+    padding-top: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 1.5vw;
 }
-.tasks__todo-list{
-    width: 29%;
+.tasks__chart-title p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4vw;
+}
+
+.tasks__image{
+    width: 33%;
+    padding: 1vw;
+    margin-top: 6vw;
+}
+
+.task-image{
+    width: 100%;
+    border-radius: 10%;
+    text-align: center;
 }
 
 .statistics__projects{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 20%;
 }
 .projects-stat, .tasks-stat{
     display: flex;
     flex-direction: column;
+    text-align: center;
+    background-color: rgb(230, 170, 80);
+    color: blue;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+.projects-stat{
+    padding: 2vw 1vw 2vw 1vw;
+}
+
+.tasks-stat{
+    padding: 2vw 1vw 2vw 1vw;
+}
+
+.total-projects, .total-tasks{
+font-size: 1.6vw;
+font-weight: 600;
+}
+
+.tasks__time{
+    padding-top: 2vw;
+    text-align: center;
+    font-size: 1.8vw;
+}
+
+.profile__photo{
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid rgb(230, 170, 80);
+    overflow: hidden;
+    width: 15vw;
+    height:15vw;
+}
+.profile__photo img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.profile__name, .profile__position{
+    text-align: center;
+}
+.profile__name{
+margin: 0;
+padding-top: 1vw;
 }
