@@ -1,7 +1,3 @@
-// import Chart from 'chart.js/auto';
-// import ApexCharts from 'apexcharts';
-
-
 const weeklyChart=document.querySelector('.statistics__weekly-chart');
 const myWeeklyChart=document.getElementById('myWeeklyChart');
 const userName=document.querySelector('.title-text');
